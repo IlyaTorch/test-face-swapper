@@ -4,15 +4,19 @@ This is an initial version for test task. Future iterations are expected to impl
 
 ---
 ## Instalation
-
+0. Init the database
+```shell
+mkdir db_data
+touch db_data/db.sqlite3
+```
 1. Download `inswapper_128.onnx` to `~/.insightface/models/`
 ```
 mkdir -p ~/.insightface/models/ ; wget -P ~/.insightface/models/ -O ~/.insightface/models/inswapper_128.onnx https://huggingface.co/Devia/G/resolve/main/inswapper_128.onnx?download=true
 ```
 2. Clone the repository
 ```
-$ git clone <link>
-$ cd <link>
+$ git clone https://github.com/IlyaTorch/test-face-swapper
+$ cd test-face-swapper
 ```
 3. Create virtual environment and install the dependencies. **Python3.11 required**
 ```
